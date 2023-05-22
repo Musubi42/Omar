@@ -1,0 +1,119 @@
+body {
+  background-color: #eee;
+}
+
+.svg {
+  background-image: url(../spill.svg);
+  width: 100%;
+  height: 20vh; /* 20% of the viewport height */
+  /* background-image: url('path/to/your/svg.svg'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+
+.wrapper {
+  height: 100vh;
+  text-align: center;
+}
+.wrapper button {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.loader {
+  position: fixed;
+  /* z-index: 999; */
+  top: 0;
+  /* left: 0; */
+  width: 100%;
+  /* 100% et 100vh pete tout */
+  height: 100%;
+  transition: width 0s 1.4s ease;
+}
+
+.loader__tile {
+  /* transform: rotate(90deg); */
+  position: absolute;
+  top: -100vh;
+  width: 20%;
+  height: 100%;
+  background-color: #007ae5;
+  /* transition: width 0.7s ease; */
+}
+
+/* @keyframes switch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+} */
+
+@keyframes switch {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+}
+.loader__tile:nth-child(0) {
+  left: calc(-1 * 20%);
+  animation: switch 0.7s forwards 0.1s;
+}
+.loader__tile:nth-child(1) {
+  left: calc(0 * 20%);
+  animation: switch 0.7s forwards 0s;
+}
+.loader__tile:nth-child(2) {
+  left: calc(1 * 20%);
+  animation: switch 0.7s forwards 0.3s;
+}
+.loader__tile:nth-child(3) {
+  left: calc(2 * 20%);
+  animation: switch 0.7s forwards 0.2s;
+}
+.loader__tile:nth-child(4) {
+  left: calc(3 * 20%);
+  animation: switch 0.7s forwards 0.5s;
+}
+.loader__tile:nth-child(5) {
+  left: calc(4 * 20%);
+  animation: switch 0.7s forwards 0.1s;
+}
+.loader--active {
+  height: 50%;
+  transition-delay: 0s;
+}
+.loader--active {
+  opacity: 1;
+  transition: opacity 0.5s 1.4s ease;
+}
+
+/* .loader--active .loader__tile {
+  height: 100%;
+}
+.loader--active .loader__tile:nth-child(0) {
+  transition-delay: -0.2s;
+}
+.loader--active .loader__tile:nth-child(1) {
+  transition-delay: 0s;
+}
+.loader--active .loader__tile:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.loader--active .loader__tile:nth-child(3) {
+  transition-delay: 0.4s;
+}
+.loader--active .loader__tile:nth-child(4) {
+  transition-delay: 0.6s;
+}
+.loader--active .loader__tile:nth-child(5) {
+  transition-delay: 0.8s;
+} */

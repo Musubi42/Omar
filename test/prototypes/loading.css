@@ -1,0 +1,268 @@
+@font-face {
+  font-family: "WCManoNegraBoldBta";
+  src: url("./assets/fonts/WCManoNegraBoldBta.ttf");
+}
+
+body {
+  background-color: #0f1019;
+}
+
+.bottom::after,
+.top::after {
+  width: 80px;
+  height: 30px;
+  position: absolute;
+  content: "";
+}
+
+.default-border,
+.bottom::before,
+.bottom,
+.cilinder,
+.top::before,
+.pole-top,
+.bottom::after,
+.top::after {
+  border: 4px solid #94958b;
+}
+
+.shadow,
+.bottom::before,
+.bottom,
+.top::before,
+.top {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 15%,
+    transparent 20%,
+    transparent 85%,
+    rgba(0, 0, 0, 0.1) 95%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+.shadow-radial,
+.top::after {
+  background: radial-gradient(
+    50px at 55% 75%,
+    transparent 15%,
+    transparent 50%,
+    rgba(0, 0, 0, 0.1) 65%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+.shadow-radial-inverted,
+.bottom::after {
+  background: radial-gradient(
+    50px at 55% 25%,
+    transparent 15%,
+    transparent 50%,
+    rgba(0, 0, 0, 0.1) 65%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+/* .content {
+  position: ;
+  z-index: 100;
+  background-color: #1752d3;
+  width: 100%;
+  height: 0%;
+  animation: appear 3s linear forwards;
+} */
+
+@keyframes appear {
+  from {
+    height: 0%;
+    /* width: 0%; */
+  }
+  to {
+    height: 100%;
+    /* width: 100%; */
+  }
+}
+
+.container {
+  /* background: yellow; */
+  width: 100%;
+  /* top: 100px; */
+  position: absolute;
+  /* Fix the div to the bottom */
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  /* animation: loader 3s linear; */
+}
+
+@keyframes loader {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0%;
+  }
+}
+
+.pole {
+  margin: 100px auto;
+}
+
+.top {
+  position: relative;
+  border: 4px solid #94958b;
+  border-top: 0;
+  width: 90px;
+  top: 5px;
+  height: 10px;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 5;
+}
+.top::before {
+  position: absolute;
+  width: 100px;
+  height: 10px;
+  top: -15px;
+  left: -8px;
+  background-color: white;
+  border-radius: 5px;
+  content: "";
+}
+.top::after {
+  top: -49px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom: 0;
+  background-color: white;
+}
+
+.cilinder {
+  margin: auto;
+  height: 231px;
+  width: 70px;
+  background: linear-gradient(
+      to right,
+      #fff 0%,
+      #fff 5%,
+      rgba(0, 0, 0, 0.3) 5%,
+      rgba(0, 0, 0, 0.2) 25%,
+      rgba(0, 0, 0, 0.1) 25%,
+      rgba(0, 0, 0, 0.1) 35%,
+      rgba(211, 211, 211, 0.1) 45%,
+      rgba(211, 211, 211, 0.1) 60%,
+      rgba(255, 255, 255, 0.6) 60%,
+      rgba(255, 255, 255, 0.6) 80%,
+      rgba(211, 211, 211, 0.1) 80%,
+      rgba(211, 211, 211, 0.1) 95%,
+      #fff 95%,
+      #fff 100%
+    ),
+    repeating-linear-gradient(
+      -30deg,
+      #1752d3,
+      #1752d3 25px,
+      white 25px,
+      white 50px,
+      red 50px,
+      red 75px,
+      white 75px,
+      white 100px
+    );
+  padding: 0 5px;
+  animation: barber 4s linear infinite;
+  border-radius: 2px;
+  position: relative;
+}
+
+.bottom {
+  position: relative;
+  border-bottom: 0;
+  width: 90px;
+  bottom: 5px;
+  height: 10px;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 5;
+}
+.bottom::before {
+  position: absolute;
+  width: 100px;
+  height: 15px;
+  bottom: -20px;
+  left: -8px;
+  background-color: white;
+  border-radius: 5px;
+  content: "";
+}
+.bottom::after {
+  bottom: -54px;
+  border-top: 3px solid #94958b;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: white;
+}
+
+@keyframes barber {
+  from {
+    background-position-y: 0px;
+  }
+  to {
+    background-position-y: 231px;
+  }
+}
+
+/* OM'S */
+.loading {
+  text-transform: uppercase;
+  font-family: "WCManoNegraBoldBta", sans-serif;
+  font-weight: bold;
+  font-size: 100pt;
+  text-align: center;
+  height: 120px;
+  line-height: 110px;
+  left: 0;
+  right: 0;
+  top: 100px;
+  bottom: 0;
+  display: block;
+  background-color: #ff2416;
+}
+
+@keyframes wave-animation {
+  0% {
+    background-position: 0 bottom;
+  }
+  100% {
+    background-position: 200px bottom;
+  }
+}
+@keyframes loading-animation {
+  0% {
+    background-size: 200px 200px;
+  }
+  100% {
+    background-size: 200px 0px;
+  }
+}
+.wave {
+  background-image: url("https://i.imgur.com/uFpLbYt.png");
+  background-clip: text;
+  color: transparent;
+  /* text-shadow: 0px 0px rgba(255, 255, 255, 0.06); */
+  animation: wave-animation 1s infinite linear,
+    loading-animation 3s infinite linear alternate;
+  background-size: 200px 100px;
+  background-repeat: repeat-x;
+  opacity: 1;
+}
+
+.glass {
+  z-index: -10;
+  /* backdrop-filter: blur(1px); */
+  background-clip: text;
+  padding: 10px;
+  background-color: #f13022;
+  opacity: 0.75;
+}
