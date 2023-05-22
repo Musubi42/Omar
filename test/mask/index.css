@@ -1,0 +1,25 @@
+.masked {
+  width: 227px;
+  height: 200px;
+  background: blue linear-gradient(red, blue);
+  -webkit-mask-image: url(../waves.svg);
+  -webkit-mask-mode: alpha;
+  mask-image: url(../waves.svg);
+  mask-mode: alpha;
+}
+
+img {
+  display: block;
+  width: 100%;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 50%;
+  mask-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/sun.svg);
+  mask-mode: alpha;
+
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 50%;
+  -webkit-mask-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/sun.svg);
+  -webkit-mask-mode: alpha;
+}

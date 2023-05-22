@@ -1,0 +1,44 @@
+
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 325 100">
+  <defs>
+    <linearGradient x1="50%" y1="0%" x2="45%" y2="100%" id="ssspill-grad">
+      <stop stop-color="hsl(37, 99%, 67%)" stop-opacity="1" offset="65%"></stop>
+      <stop stop-color="hsl(316, 73%, 52%)" stop-opacity="1" offset="900%"></stop>
+    </linearGradient>
+
+
+    <linearGradient x1="10%" y1="0%" x2="20%" y2="100%" id="ssspilled-grad">
+      <stop stop-color="hsl(37, 99%, 67%)" stop-opacity="1" offset="60%"></stop>
+      <stop stop-color="hsl(16, 73%, 52%)" stop-opacity="1" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- <rect width="100%" height="100%" fill="hsl(292, 100%, 22%)"></rect> -->
+  
+  <!-- Background -->
+  <rect width="100%" height="40" fill="hsl(37, 99%, 67%)"></rect>
+
+
+  <!-- Third drop -->
+  <rect fill="url(#ssspill-grad)" x="20.2222222222%" width="16.665%" height="78.83822727180677" rx="33"></rect>
+  <!-- Second drop  -->
+  <rect fill="url(#ssspilled-grad)" x="-5%" width="27%" height="90.18953747430147" rx="404"></rect>
+  <!-- First drop -->
+  <rect fill="url(#ssspill-grad)" x="55%" width="35.1111%" height="66.18953747430147" rx="2220"></rect>
+  <!-- Forth drop  -->
+  <rect fill="url(#ssspilled-grad)" x="35%" width="22.1111%" height="70.18953747430147" rx="35"></rect>
+  <!-- Sixth drop -->
+  <rect fill="url(#ssspilled-grad)" x="80.2222222222%" width="25.665%" height="78.83822727180677" rx="2222223"></rect>
+  
+  <g fill="url(#ssspill-grad)">
+    <!-- <rect x="88.8888888888%" width="11.1111%" height="69.1612113584093" rx="20"></rect> -->
+  </g>
+
+  <g fill="hsl(292, 100%, 22%)">
+    <!-- <rect x="11.1111%" y="7.434671143702332" width="16,665%" height="60" rx="20"></rect>
+    <rect x="33.3333333333%" y="18.651289828657895" width="16,665%" height="60" rx="20"></rect>
+    <rect x="55.5555555555%" y="13.95341469663809" width="16,665%" height="60" rx="20"></rect> -->
+    <!-- <rect x="77.7777777777%" y="13.527503725485229" width="11.1111%" height="60" rx="20"></rect> -->
+  </g>
+</svg>
