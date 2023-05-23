@@ -21,6 +21,9 @@ module.exports = {
       height: {
         "header-logo": "105px",
       },
+      flex: {
+        1.5: "1.5 1.5 0%",
+      },
     },
   },
   plugins: [],

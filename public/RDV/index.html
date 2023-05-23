@@ -10,8 +10,8 @@
   </head>
   <body>
     <header class="bg-content">
-      <div class="flex h-full py-5 content-center justify-center">
-        <div class="absolute left-0 top-[4px] h-full">
+      <div class="flex py-5 content-center justify-center">
+        <div class="flex flex-1 justify-center content-center">
           <img
             src="../assets/images/Logo_OMS.png"
             alt="Om'S barber logo"
@@ -20,22 +20,29 @@
         </div>
 
         <div
-          class="bg-header bg-cover mb-0 menu__button__border select-none text-center w-52 p-4 justify-center content-center outline-none border-black border-solid border-4"
+          class="flex flex-[1.5_1.5_20px] h-fit mt-auto mb-auto bg-header bg-cover menu__button__border select-none text-center w-52 p-4 justify-center content-center outline-none border-black border-solid border-4"
         >
           <span class="font-lovelo-bold font-black text-xl text-[#00BF63]"
             >PRENDRE RDV</span
           >
         </div>
         <div
-          class="h-24 w-32 flex items-center justify-center absolute right-0 top-0"
+          class="flex-1 h-24 w-32 flex items-center justify-center right-0 top-0"
         >
           <div
             id="menu-burger"
             class="flex flex-col h-12 w-12 border-2 border-black rounded justify-center items-center group"
           >
-            <div class="opacity-50 group-hover:opacity-100"></div>
-            <div class="opacity-50 group-hover:opacity-100"></div>
-            <div class="opacity-50 group-hover:opacity-100"></div>
+            <div
+              id="oui"
+              class="menu__burger__sides__open h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300 group-hover:opacity-100"
+            ></div>
+            <div
+              class="menu__burger__middle__open h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300 group-hover:opacity-100"
+            ></div>
+            <div
+              class="menu__burger__sides__open h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300 group-hover:opacity-100"
+            ></div>
           </div>
           <!-- <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -104,12 +111,12 @@
       </div>
     </div> -->
 
-    <div
+    <!-- <div
       class="flex w-full justify-center absolute left-1/2 transform -translate-x-[50%] -translate-y-[54%] z-50"
     >
       <img src="../assets/svg/HR.svg" alt="séparation" />
     </div>
-    <!-- Début de widget en ligne Calendly -->
+    Début de widget en ligne Calendly
     <div
       class="calendly-inline-widget"
       data-url="https://calendly.com/d/2jm-fhc-n2k/coiffeur"
@@ -119,7 +126,7 @@
       type="text/javascript"
       src="https://assets.calendly.com/assets/external/widget.js"
       async
-    ></script>
+    ></script> -->
     <!-- Fin de widget en ligne Calendly -->
   </body>
 </html>
