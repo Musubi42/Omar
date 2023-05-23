@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        header: "url('../assets/images/BG_header.png')",
-        content: "url('/assets/images/BG_content.png')",
+        header: "url('/public/assets/images/BG_header.png')",
+        content: "url('/public/assets/images/BG_content.png')",
         "logo-oms": "url('/assets/images/Logo_OMS.png')",
         hr: "url('/assets/svg/HR.svg')",
         "button-border": "url('/assets/svg/button_border.svg')",
@@ -17,6 +17,9 @@ module.exports = {
       },
       colors: {
         "active-button": "#00BF63",
+      },
+      height: {
+        "header-logo": "105px",
       },
     },
   },
