@@ -59,7 +59,7 @@
 }
 
 .menu__burger__first__open {
-  opacity: 0.5;
+  /*   opacity: 0.5; */
 }
 
 .menu__burger__first__close {
@@ -68,7 +68,7 @@
 }
 
 .menu__burger__second__open {
-  opacity: 0.5;
+  /*   opacity: 0.5; */
 }
 
 .menu__burger__second__close {
@@ -77,7 +77,7 @@
 }
 
 .menu__burger__third__open {
-  opacity: 0.5;
+  /*   opacity: 0.5; */
 }
 
 .menu__burger__third__close {
