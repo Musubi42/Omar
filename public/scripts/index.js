@@ -1,5 +1,8 @@
 const menu_burger = document.getElementById("menu-burger");
-let menu_burger_open = true;
+const menu = document.getElementById('menu');
+const calendly = document.getElementById('calendly');
+
+const menu_open = false;
 
 const lines = [
   {
@@ -23,12 +26,17 @@ const lines = [
 ];
 
 menu_burger.addEventListener("click", (e) => {
-  e.target.children[0].classList.toggle("menu__burger__first__open");
-  e.target.children[0].classList.toggle("menu__burger__first__close");
+  menu_burger.children[0].classList.toggle("menu__burger__first__open");
+  menu_burger.children[0].classList.toggle("menu__burger__first__close");
 
-  e.target.children[1].classList.toggle("menu__burger__second__open");
-  e.target.children[1].classList.toggle("menu__burger__second__close");
+  menu_burger.children[1].classList.toggle("menu__burger__second__open");
+  menu_burger.children[1].classList.toggle("menu__burger__second__close");
 
-  e.target.children[2].classList.toggle("menu__burger__third__open");
-  e.target.children[2].classList.toggle("menu__burger__third__close");
+  menu_burger.children[2].classList.toggle("menu__burger__third__open");
+  menu_burger.children[2].classList.toggle("menu__burger__third__close");
+
+  // if(menu_open) {
+    menu.classList.toggle('hidden');
+    calendly.classList.toggle('hidden')
+  // }
 });
