@@ -16,7 +16,8 @@ module.exports = {
         "lovelo-bold": ["Lovelo_Bold", "arial"],
       },
       colors: {
-        "active-button": "#00BF63",
+        "active-button": "#06964C",
+        "page-title": "#A30000",
       },
       height: {
         "header-logo": "105px",
