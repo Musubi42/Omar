@@ -5,91 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../index.css" />
+    <script defer src="../scripts/loader.js"></script>
     <script defer src="../scripts/index.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <header class="bg-gray-400">
-      <div class="flex py-5 content-center justify-center">
-        <div class="flex flex-1 justify-center content-center">
-          <img
-            src="../assets/images/Logo_OMS.png"
-            alt="Om'S barber logo"
-            class="w-auto h-header-logo align-middle border-none"
-          />
-        </div>
+    <header id="header"></header>
 
-        <div
-          class="flex flex-[1.5_1.5_20px] h-fit mt-auto mb-auto bg-header bg-cover menu__button__border select-none text-center w-52 p-4 justify-center content-center outline-none border-black border-solid border-4"
-        >
-          <span class="font-lovelo-bold font-black text-xl text-[#00BF63]"
-            >PRENDRE RDV</span
-          >
-        </div>
-        <div
-          class="flex-1 h-24 w-32 flex items-center justify-center right-0 top-0"
-        >
-          <div
-            id="menu-burger"
-            class="flex flex-col h-12 w-12 border-2 border-black rounded justify-center items-center group cursor-pointer"
-          >
-            <div
-              class="menu__burger__sides__open h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300"
-            ></div>
-            <div
-              class="menu__burger__middle__open h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300"
-            ></div>
-            <div
-              class="menu__burger__sides__open h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300"
-            ></div>
-          </div>
-        </div>
-      </div>
-    </header>
-    
     <div
-      class="flex w-full justify-center absolute left-1/2 transform -translate-x-[50%] -translate-y-[54%] z-50"
+      class="flex w-full justify-center absolute left-1/2 transform -translate-x-[50%] -translate-y-[54%] z-10"
     >
-    <img src="../assets/svg/HR.svg" alt="séparation" />
-  </div>
-
-    <!-- Navbar -->
-    <div class="h-full w-full">
-      <div 
-      id="menu"
-      class="bg-content h-full hidden">
-        <div class="flex flex-col justify-center items-center h-full pt-12">
-          <div
-            class="bg-header bg-cover mb-7 menu__button active:text-active-button"
-          >
-            <span class="font-lovelo-bold font-black neon-text"
-              >PRENDRE RDV</span
-            >
-          </div>
-          <div
-            class="bg-header bg-cover mb-7 menu__button active:text-active-button"
-          >
-            <span class="font-lovelo-bold font-black neon-text">TARIFS</span>
-          </div>
-          <div
-            class="bg-header bg-cover mb-7 menu__button active:text-active-button"
-          >
-            <span class="font-lovelo-bold font-black neon-text"
-              >RÉSEAUX SOCIAUX</span
-            >
-          </div>
-          <div
-            class="bg-header bg-cover mb-7 menu__button active:text-active-button"
-          >
-            <span class="font-lovelo-bold font-black neon-text"
-              >GALERIE, AVIS</span
-            >
-          </div>
-        </div>
-      </div>
+      <img src="../assets/svg/HR.svg" alt="séparation" />
     </div>
 
-      <!-- 
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- 
     Début de widget en ligne Calendly -->
     <div
       id="calendly"
