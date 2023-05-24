@@ -59,3 +59,4 @@ setTimeout(() => {
     console.log(e.target);
   });
 }, 500);
+
