@@ -23,54 +23,68 @@
 
     <!-- Tarifs -->
 
-
     <div class="container p-8">
       <!-- Une coupe -->
       <div class="container flex flex-col">
         <div class="flex content-center justify-center mb-4">
-          <span class="text-2xl font-extrabold">Taper</span>
+          <span class="text-2xl font-extrabold">High Five</span>
         </div>
-        <div aria-label="coupe_gallery_photo" class="grid gap-4">
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg"
-              alt=""
-            />
+        <div class="grid gap-4">
+          <!-- TODO : Ajouter hidden a toutes les cards, si pas présent -->
+          <!-- TODO : Retirer hidden de la card qui vient d'être sélectionné -->
+          <div aria-label="coupe_gallery">
+            <div id="highFive_0_big" class="h-52 w-[-webkit-fill-available]">
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="https://images.unsplash.com/photo-1568339434343-2a640a1a9946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y291cGUlMjBkZSUyMGNoZXZldXh8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+                alt=""
+              />
+            </div>
+            <div
+              id="highFive_1_big"
+              class="h-52 w-[-webkit-fill-available] hidden"
+            >
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="https://images.unsplash.com/photo-1629189784191-9afdcbcb0398?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y291cGUlMjBkZSUyMGNoZXZldXh8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+                alt=""
+              />
+            </div>
           </div>
-          <div class="grid grid-cols-5 gap-4">
-            <div>
+          <div class="grid grid-cols-4 gap-4">
+            <div class="max-h-14">
               <img
-                class="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+                id="highFive_0_small"
+                class="max-h-full w-full rounded-lg focus:ring-4 focus:border-blue-500 object-cover cursor-pointer"
+                tabindex="0"
+                src="https://images.unsplash.com/photo-1568339434343-2a640a1a9946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y291cGUlMjBkZSUyMGNoZXZldXh8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
                 alt=""
               />
             </div>
-            <div>
+            <div class="max-h-14">
               <img
-                class="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+                id="highFive_1_small"
+                class="max-h-full w-full rounded-lg focus:ring-4 focus:border-blue-500 object-cover cursor-pointer"
+                tabindex="0"
+                src="https://images.unsplash.com/photo-1629189784191-9afdcbcb0398?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y291cGUlMjBkZSUyMGNoZXZldXh8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
                 alt=""
               />
             </div>
-            <div>
+            <div class="max-h-14">
               <img
-                class="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+                id="highFive_2_small"
+                class="max-h-full w-full rounded-lg focus:ring-2 focus:border-blue-300 object-cover"
+                tabindex="0"
+                src="https://images.unsplash.com/photo-1568339434343-2a640a1a9946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y291cGUlMjBkZSUyMGNoZXZldXh8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
                 alt=""
               />
             </div>
-            <div>
+            <div class="max-h-14">
               <img
-                class="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                class="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
+                id="highFive_3_small"
+                class="max-h-full w-full rounded-lg focus:ring-2 focus:border-blue-300 object-cover"
+                tabindex="0"
+                src="https://images.unsplash.com/photo-1568339434343-2a640a1a9946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y291cGUlMjBkZSUyMGNoZXZldXh8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
                 alt=""
               />
             </div>
@@ -84,7 +98,8 @@
             elit. Quia aut, vitae maiores ullam consequatur doloremque dicta quo
             corrupti repellat placeat!
           </dt>
-          <a
+          <!-- TODO : Remettre un a pour la prod -->
+          <button
             href="../RDV/index.html"
             type="button"
             class="text-white mx-auto mt-7 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 flex w-fit dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
@@ -103,10 +118,10 @@
                 clip-rule="evenodd"
               ></path>
             </svg>
-
-          </a>
+          </button>
         </div>
       </div>
+
       <!-- TODO : Rajouter mt-11 si pas première card -->
       <div class="container flex flex-col mt-11">
         <div class="flex content-center justify-center mb-4">
@@ -115,48 +130,56 @@
         <div class="grid gap-4">
           <!-- TODO : Ajouter hidden a toutes les cards, si pas présent -->
           <!-- TODO : Retirer hidden de la card qui vient d'être sélectionné -->
-          <div class="h-52 w-[-webkit-fill-available]">
-            <img
-              class="h-full w-full rounded-lg object-cover"
-              src="https://images.unsplash.com/photo-1629189784191-9afdcbcb0398?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y291cGUlMjBkZSUyMGNoZXZldXh8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
-              alt=""
-            />
-          </div>
-          <div class="h-52 w-[-webkit-fill-available] hidden">
-            <img
-              class="h-full w-full rounded-lg object-cover"
-              src="https://images.unsplash.com/photo-1568339434343-2a640a1a9946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y291cGUlMjBkZSUyMGNoZXZldXh8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
-              alt=""
-            />
-          </div>
-          <div aria-label="coupe_gallery_photo" class="grid grid-cols-4 gap-4">
-            <div id="first" class="max-h-14">
+          <div aria-label="coupe_gallery">
+            <div id="taper_0_big" class="h-52 w-[-webkit-fill-available]">
               <img
-                aria-label="first"
-                class="max-h-full w-full rounded-lg focus:ring-4 focus:border-blue-500 object-cover cursor-pointer"
+                class="h-full w-full rounded-lg object-cover"
+                src="https://images.unsplash.com/photo-1568339434343-2a640a1a9946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y291cGUlMjBkZSUyMGNoZXZldXh8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+                alt=""
+              />
+            </div>
+            <div
+              id="taper_1_big"
+              class="h-52 w-[-webkit-fill-available] hidden"
+            >
+              <img
+                class="h-full w-full rounded-lg object-cover"
+                src="https://images.unsplash.com/photo-1629189784191-9afdcbcb0398?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y291cGUlMjBkZSUyMGNoZXZldXh8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="grid grid-cols-4 gap-4">
+            <div class="max-h-14">
+              <img
+                id="taper_0_small"
+                class="max-h-full w-full rounded-lg object-cover cursor-pointer"
                 tabindex="0"
                 src="https://images.unsplash.com/photo-1568339434343-2a640a1a9946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y291cGUlMjBkZSUyMGNoZXZldXh8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
                 alt=""
               />
             </div>
-            <div id="second" class="max-h-14">
+            <div class="max-h-14">
               <img
-                class="max-h-full w-full rounded-lg focus:ring-4 focus:border-blue-500 object-cover cursor-pointer"
+                id="taper_1_small"
+                class="max-h-full w-full rounded-lg object-cover cursor-pointer"
                 tabindex="0"
                 src="https://images.unsplash.com/photo-1629189784191-9afdcbcb0398?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y291cGUlMjBkZSUyMGNoZXZldXh8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
                 alt=""
               />
             </div>
-            <div id="third" class="max-h-14">
+            <div class="max-h-14">
               <img
+                id="taper_2_small"
                 class="max-h-full w-full rounded-lg focus:ring-2 focus:border-blue-300 object-cover"
                 tabindex="0"
                 src="https://images.unsplash.com/photo-1568339434343-2a640a1a9946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y291cGUlMjBkZSUyMGNoZXZldXh8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
                 alt=""
               />
             </div>
-            <div id="forth" class="max-h-14">
+            <div class="max-h-14">
               <img
+                id="taper_3_small"
                 class="max-h-full w-full rounded-lg focus:ring-2 focus:border-blue-300 object-cover"
                 tabindex="0"
                 src="https://images.unsplash.com/photo-1568339434343-2a640a1a9946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y291cGUlMjBkZSUyMGNoZXZldXh8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
