@@ -6,9 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
     ? document.getElementById("navbar")
     : null;
 
+  // TODO : ajouter le lien quand la page réseau existera ../reseaux_sociaux/index.html
   if (navbar) {
     navbar.innerHTML =
-      '<div id="menu" class="absolute z-20 top-0 h-full w-full hidden">' +
+      '<div id="menu" class="absolute z-40 top-0 h-full w-full hidden">' +
       '    <div class="bg-content bg-contain h-full"> ' +
       '      <div class="flex flex-col justify-center items-center h-full pt-12"> ' +
       "        <a href='../RDV/index.html' " +
@@ -23,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "        > " +
       '          <span class="font-lovelo-bold font-black neon-text">TARIFS</span> ' +
       "        </a> " +
-      "        <a href='../reseaux_sociaux/index.html' " +
+      "        <a href='' " +
       '          class="bg-header bg-cover mb-7 menu__button active:text-page-title" ' +
       "        > " +
       '          <span class="font-lovelo-bold font-black neon-text" ' +
@@ -80,11 +81,11 @@ document.addEventListener("DOMContentLoaded", function () {
       '     <div class="flex-1 h-24 w-32 flex items-center justify-center right-0 top-0"> ' +
       "       <div " +
       '         id="menu-burger" ' +
-      '         class="z-30 flex flex-col h-12 w-12 border-2 border-black rounded justify-center items-center group cursor-pointer" ' +
+      '         class="z-50 flex flex-col h-12 w-12 border-2 border-black rounded justify-center items-center group cursor-pointer" ' +
       "       > " +
-      '         <div class="menu__burger__sides__open h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300"></div> ' +
-      '         <div class="menu__burger__middle__open h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300"></div> ' +
-      '         <div class="menu__burger__sides__open h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300"></div> ' +
+      '         <div class="h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300"></div> ' +
+      '         <div class="h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300"></div> ' +
+      '         <div class="h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300"></div> ' +
       "       </div> " +
       "     </div> " +
       "   </div> " +
