@@ -5,7 +5,18 @@
 setTimeout(() => {
   const menu_burger = document.getElementById("menu-burger");
   const menu = document.getElementById("menu");
-  const calendly = document.getElementById("calendly");
+  const calendly = document.getElementById("calendly")
+    ? document.getElementById("calendly")
+    : false;
+  const tarifs = document.getElementById("tarifs")
+    ? document.getElementById("tarifs")
+    : false;
+  const reseaux = document.getElementById("reseaux")
+    ? document.getElementById("reseaux")
+    : false;
+  const avis = document.getElementById("avis")
+    ? document.getElementById("avis")
+    : false;
 
   const menu_open = false;
 
@@ -31,18 +42,22 @@ setTimeout(() => {
   ];
 
   menu_burger.addEventListener("click", (e) => {
-    menu_burger.children[0].classList.toggle("menu__burger__first__open");
+    // menu_burger.children[0].classList.toggle("menu__burger__first__open");
     menu_burger.children[0].classList.toggle("menu__burger__first__close");
 
-    menu_burger.children[1].classList.toggle("menu__burger__second__open");
+    // menu_burger.children[1].classList.toggle("menu__burger__second__open");
     menu_burger.children[1].classList.toggle("menu__burger__second__close");
 
-    menu_burger.children[2].classList.toggle("menu__burger__third__open");
+    // menu_burger.children[2].classList.toggle("menu__burger__third__open");
     menu_burger.children[2].classList.toggle("menu__burger__third__close");
 
     // if(menu_open) {
     menu.classList.toggle("hidden");
-    calendly.classList.toggle("hidden");
+    calendly ? calendly.classList.toggle("hidden") : null;
+    tarifs ? tarifs.classList.toggle("hidden") : null;
+    reseaux ? reseaux.classList.toggle("hidden") : null;
+    avis ? avis.classList.toggle("hidden") : null;
+    // calendly.classList.toggle("hidden");
     // }
   });
 
@@ -90,4 +105,3 @@ setTimeout(() => {
     }
   });
 }, 500);
-
