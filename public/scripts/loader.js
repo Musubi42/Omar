@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "            >PRENDRE RDV</span " +
       "          > " +
       "        </a> " +
-      "        <a href='tarifs/index.html' " +
+      "        <a href='/tarifs/index.html' " +
       '          class="bg-header bg-cover mb-7 menu__button active:text-page-title" ' +
       "        > " +
       '          <span class="font-lovelo-bold font-black neon-text">TARIFS</span> ' +
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "            >RÉSEAUX SOCIAUX</span " +
       "          > " +
       "        </a> " +
-      "        <a href='/avis/index.html' " +
+      "        <a href='/avis/' " +
       '          class="bg-header bg-cover mb-7 menu__button active:text-page-title" ' +
       "        > " +
       '          <span class="font-lovelo-bold font-black neon-text">AVIS</span> ' +
