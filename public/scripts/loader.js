@@ -12,26 +12,26 @@ document.addEventListener("DOMContentLoaded", function () {
       '<div id="menu" class="absolute z-40 top-0 h-full w-full hidden">' +
       '    <div class="bg-content bg-contain h-full"> ' +
       '      <div class="flex flex-col justify-center items-center h-full pt-12"> ' +
-      "        <a href='/public/RDV/index.html' " +
+      "        <a href='/RDV/index.html' " +
       '          class="bg-header bg-cover mb-7 menu__button active:text-page-title" ' +
       "        > " +
       '          <span class="font-lovelo-bold font-black neon-text" ' +
       "            >PRENDRE RDV</span " +
       "          > " +
       "        </a> " +
-      "        <a href='/public/tarifs/index.html' " +
+      "        <a href='tarifs/index.html' " +
       '          class="bg-header bg-cover mb-7 menu__button active:text-page-title" ' +
       "        > " +
       '          <span class="font-lovelo-bold font-black neon-text">TARIFS</span> ' +
       "        </a> " +
-      "        <a href='/public/reseaux/index.html' " +
+      "        <a href='/reseaux/index.html' " +
       '          class="bg-header bg-cover mb-7 menu__button active:text-page-title" ' +
       "        > " +
       '          <span class="font-lovelo-bold font-black neon-text" ' +
       "            >RÉSEAUX SOCIAUX</span " +
       "          > " +
       "        </a> " +
-      "        <a href='/public/avis/index.html' " +
+      "        <a href='/avis/index.html' " +
       '          class="bg-header bg-cover mb-7 menu__button active:text-page-title" ' +
       "        > " +
       '          <span class="font-lovelo-bold font-black neon-text">AVIS</span> ' +
@@ -66,13 +66,13 @@ document.addEventListener("DOMContentLoaded", function () {
       '   <div class="flex py-5 content-center justify-center"> ' +
       '     <a href="/index.html" class="flex flex-1 justify-center content-center"> ' +
       "       <img " +
-      '         src="/public/assets/images/Logo_OMS.png" ' +
+      '         src="/assets/images/Logo_OMS.png" ' +
       '         alt="Om&apos;S barber logo" ' +
       '         class="w-auto h-header-logo align-middle border-none" ' +
       "       /> " +
       "     </a> " +
       '     <div class="flex flex-[1.5_1.5_20px] h-fit mt-auto mb-auto bg-header bg-cover menu__button__border select-none text-center w-52 p-4 justify-center content-center outline-none border-black border-solid border-4"> ' +
-      '       <span class="font-lovelo-bold font-black text-lg text-page-title"> ' +
+      '       <span class="font-lovelo-bold font-black text-[2rem] text-page-title"> ' +
       `         ${pageName} ` +
       "       </span> " +
       "     </div> " +
