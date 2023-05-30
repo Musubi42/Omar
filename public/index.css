@@ -954,11 +954,11 @@ video {
 }
 
 .bg-content {
-  background-image: url('/public/assets/images/BG_content.png');
+  background-image: url('/assets/images/BG_content.png');
 }
 
 .bg-header {
-  background-image: url('/public/assets/images/BG_header.png');
+  background-image: url('/assets/images/BG_header.png');
 }
 
 .bg-contain {
