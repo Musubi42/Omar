@@ -12,19 +12,19 @@ document.addEventListener("DOMContentLoaded", function () {
       '<div id="menu" class="absolute z-40 top-0 h-full w-full hidden">' +
       '    <div class="bg-content bg-contain h-full"> ' +
       '      <div class="flex flex-col justify-center items-center h-full pt-12"> ' +
-      "        <a href='/RDV/index.html' " +
+      "        <a href='/RDV/' " +
       '          class="bg-header bg-cover mb-7 menu__button active:text-page-title" ' +
       "        > " +
       '          <span class="font-lovelo-bold font-black neon-text" ' +
       "            >PRENDRE RDV</span " +
       "          > " +
       "        </a> " +
-      "        <a href='/tarifs/index.html' " +
+      "        <a href='/tarifs/' " +
       '          class="bg-header bg-cover mb-7 menu__button active:text-page-title" ' +
       "        > " +
       '          <span class="font-lovelo-bold font-black neon-text">TARIFS</span> ' +
       "        </a> " +
-      "        <a href='/reseaux/index.html' " +
+      "        <a href='/reseaux/' " +
       '          class="bg-header bg-cover mb-7 menu__button active:text-page-title" ' +
       "        > " +
       '          <span class="font-lovelo-bold font-black neon-text" ' +
