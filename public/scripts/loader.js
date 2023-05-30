@@ -12,26 +12,26 @@ document.addEventListener("DOMContentLoaded", function () {
       '<div id="menu" class="absolute z-40 top-0 h-full w-full hidden">' +
       '    <div class="bg-content bg-contain h-full"> ' +
       '      <div class="flex flex-col justify-center items-center h-full pt-12"> ' +
-      "        <a href='../RDV/index.html' " +
+      "        <a href='/public/RDV/index.html' " +
       '          class="bg-header bg-cover mb-7 menu__button active:text-page-title" ' +
       "        > " +
       '          <span class="font-lovelo-bold font-black neon-text" ' +
       "            >PRENDRE RDV</span " +
       "          > " +
       "        </a> " +
-      "        <a href='../tarifs/index.html' " +
+      "        <a href='/public/tarifs/index.html' " +
       '          class="bg-header bg-cover mb-7 menu__button active:text-page-title" ' +
       "        > " +
       '          <span class="font-lovelo-bold font-black neon-text">TARIFS</span> ' +
       "        </a> " +
-      "        <a href='' " +
+      "        <a href='/public/reseaux/index.html' " +
       '          class="bg-header bg-cover mb-7 menu__button active:text-page-title" ' +
       "        > " +
       '          <span class="font-lovelo-bold font-black neon-text" ' +
       "            >RÉSEAUX SOCIAUX</span " +
       "          > " +
       "        </a> " +
-      "        <a href='../avis/index.html' " +
+      "        <a href='/public/avis/index.html' " +
       '          class="bg-header bg-cover mb-7 menu__button active:text-page-title" ' +
       "        > " +
       '          <span class="font-lovelo-bold font-black neon-text">AVIS</span> ' +
@@ -41,14 +41,12 @@ document.addEventListener("DOMContentLoaded", function () {
       "  </div> ";
   }
 
-  console.log(document.location.href.toString());
   if (
     document.location.href ==
     ("http://127.0.0.1:5501/public/index.html" ||
       "https://demo.omsbarber.fr" ||
       "https://omsbarber.fr")
   ) {
-    console.log("hi");
     menu.classList.remove("hidden");
     menu.classList.remove("absolute");
     menu.classList.remove("top-0");
@@ -66,9 +64,9 @@ document.addEventListener("DOMContentLoaded", function () {
     header.innerHTML =
       ' <div class="bg-content bg-cover"> ' +
       '   <div class="flex py-5 content-center justify-center"> ' +
-      '     <a href="../index.html" class="flex flex-1 justify-center content-center"> ' +
+      '     <a href="/index.html" class="flex flex-1 justify-center content-center"> ' +
       "       <img " +
-      '         src="../assets/images/Logo_OMS.png" ' +
+      '         src="/public/assets/images/Logo_OMS.png" ' +
       '         alt="Om&apos;S barber logo" ' +
       '         class="w-auto h-header-logo align-middle border-none" ' +
       "       /> " +
