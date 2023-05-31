@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
       '     <div class="flex-1 h-24 w-32 flex items-center justify-center right-0 top-0"> ' +
       "       <div " +
       '         id="menu-burger" ' +
-      '         class="z-50 flex flex-col h-12 w-12 border-2 border-black rounded justify-center items-center group cursor-pointer" ' +
+      '         class="z-50 flex flex-col h-12 w-12 border-2 bg-white border-black rounded justify-center items-center group cursor-pointer" ' +
       "       > " +
       '         <div class="h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300"></div> ' +
       '         <div class="h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300"></div> ' +
