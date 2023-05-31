@@ -11,6 +11,9 @@ setTimeout(() => {
   const tarifs = document.getElementById("tarifs")
     ? document.getElementById("tarifs")
     : false;
+  const coupes = document.getElementById("coupes")
+    ? document.getElementById("coupes")
+    : false;
   const reseaux = document.getElementById("reseaux")
     ? document.getElementById("reseaux")
     : false;
@@ -55,6 +58,12 @@ setTimeout(() => {
     menu.classList.toggle("hidden");
     calendly ? calendly.classList.toggle("hidden") : null;
     tarifs ? tarifs.classList.toggle("hidden") : null;
+    // Appliquer un hidden rejout la vidéo quand la navbar disparait
+    // coupes ? coupes.classList.toggle("hidden") : null;
+    // Mettre en pause toutes les vidéos
+    videos.forEach((video) => {
+      video.pause();
+    });
     reseaux ? reseaux.classList.toggle("hidden") : null;
     avis ? avis.classList.toggle("hidden") : null;
     // calendly.classList.toggle("hidden");
