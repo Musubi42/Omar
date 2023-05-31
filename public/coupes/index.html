@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+    <script defer src="/scripts/index.js"></script>
+    <script defer src="/scripts/loader.js"></script>
+    <title>OM'S Barber Tarifs</title>
+  </head>
+  <body>
+    <!-- <header id="header"></header> -->
+    <div
+      id="menu-burger"
+      class="z-50 fixed right-5 top-5 bg-green-300 flex flex-col h-12 w-12 border-2 border-black rounded justify-center items-center group cursor-pointer"
+    >
+      <div
+        class="menu__burger__sides__open h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300"
+      ></div>
+      <div
+        class="menu__burger__middle__open h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300"
+      ></div>
+      <div
+        class="menu__burger__sides__open h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300"
+      ></div>
+    </div>
+
+    <!-- <div
+      class="flex w-full justify-center absolute left-1/2 transform -translate-x-[50%] -translate-y-[54%] z-10"
+    >
+      <img src="/assets/svg/HR.svg" alt="séparation" />
+    </div> -->
+
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- Vidéos des coupes -->
+    <div class="video-container bg-black">
+      <div class="video-item">
+        <video id="low_fade" src="/assets/videos/low_fade.mp4" loop></video>
+        <!-- <button class="play-button1">Play</button> -->
+      </div>
+      <div class="video-item">
+        <video id="mid_fade" src="/assets/videos/mid_fade.mp4" loop></video>
+        <!-- <button class="play-button2">Play</button> -->
+      </div>
+      <div class="video-item">
+        <video id="taper" src="/assets/videos/taper.mp4" loop></video>
+        <!-- <button class="play-button3">Play</button> -->
+      </div>
+      <!-- Add more video items as needed -->
+    </div>
+  </body>
+</html>

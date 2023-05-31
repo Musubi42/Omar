@@ -105,3 +105,55 @@ setTimeout(() => {
     }
   });
 }, 500);
+
+const videos = document.querySelectorAll(".video-container video");
+
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.5, // Adjust this value based on your needs
+};
+
+const handleVideoIntersect = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.play();
+    } else {
+      entry.target.pause();
+    }
+  });
+};
+
+const videoObserver = new IntersectionObserver(handleVideoIntersect, options);
+
+videos.forEach((video) => {
+  videoObserver.observe(video);
+});
+
+const low_fade = document.getElementById("low_fade");
+const mid_fade = document.getElementById("mid_fade");
+const taper = document.getElementById("taper");
+
+low_fade.addEventListener("click", () => {
+  if (!low_fade.paused) {
+    videos[0].pause();
+  } else {
+    videos[0].play();
+  }
+});
+
+mid_fade.addEventListener("click", () => {
+  if (!mid_fade.paused) {
+    videos[1].pause();
+  } else {
+    videos[1].play();
+  }
+});
+
+taper.addEventListener("click", () => {
+  if (!taper.paused) {
+    videos[2].pause();
+  } else {
+    videos[2].play();
+  }
+});
