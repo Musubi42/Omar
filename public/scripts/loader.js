@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
       "            >PRENDRE RDV</span " +
       "          > " +
       "        </a> " +
-      "        <a href='/tarifs/' " +
+      "        <a href='/coupes/' " +
       '          class="bg-header bg-cover mb-7 menu__button active:text-page-title" ' +
       "        > " +
-      '          <span class="font-lovelo-bold font-black neon-text">TARIFS</span> ' +
+      '          <span class="font-lovelo-bold font-black neon-text">COUPES</span> ' +
       "        </a> " +
       "        <a href='/reseaux/' " +
       '          class="bg-header bg-cover mb-7 menu__button active:text-page-title" ' +

@@ -97,3 +97,45 @@
   transform: rotate(8deg);
   z-index: -1;
 }
+
+.video-container {
+  height: 100vh; /* Set the container height to full viewport height */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  scroll-snap-type: y mandatory; /* Enable snapping behavior */
+  position: relative;
+}
+
+.video-item {
+  height: 100vh; /* Each video item takes full viewport height */
+  scroll-snap-align: start; /* Snap each video item to the start of the container */
+}
+
+video {
+  /*object-fit: cover;  Make the video fill the container */
+  width: 100%; /* Make the video take full width of the container */
+  height: 100%; /* Make the video take full height of the container */
+}
+
+/* Voir à afficher un button quand : */
+/* Les vidéos n'ont pas encore été mises en routes, pour faire comprendre qu'il faut faire jouer les vidéos */
+/* On appuie sur l'écran pour mettre pause la vidéo, voir à faire comme sur les réseaux afficher le play button un instant et le faire disparaitre */
+/* .play-button1 {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.play-button2 {
+  position: absolute;
+  top: 137%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.play-button3 {
+  position: absolute;
+  top: 237%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
